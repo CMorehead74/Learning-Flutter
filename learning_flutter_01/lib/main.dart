@@ -9,10 +9,9 @@ void main() {
           title: Text('I Am Rich'),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Center(
+        body: const Center(
           child: Image(
-            image: NetworkImage(
-                'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+            image: AssetImage('images/diamond.png'),
           ),
         ),
       ),
