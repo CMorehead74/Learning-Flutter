@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
+//LESSON 2, I AM RICH APP.
+//TODO: COMMENT IN TO RUN
 
-void main() {
+/*import 'package:flutter/material.dart';
+
+ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
@@ -17,4 +20,4 @@ void main() {
       ),
     ),
   );
-}
+} */
