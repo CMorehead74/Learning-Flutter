@@ -12,12 +12,16 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
                 height: 100.0,
                 width: double.infinity,
                 color: Colors.white,
                 child: Text('Container 1'),
+              ),
+              SizedBox(
+                height: 20.0
               ),
               Container(
                 height: 100.0,
