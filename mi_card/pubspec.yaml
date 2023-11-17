@@ -24,7 +24,10 @@ flutter:
   uses-material-design: true
   assets:
     - images/Ella.jpg
-#  fonts:
-#  - family: GloriaHallelujah
-#    fonts:
-#    - asset: fonts/GloriaHallelujah-Regular.ttf
+  fonts:
+  - family: GloriaHallelujah
+    fonts:
+    - asset: fonts/GloriaHallelujah-Regular.ttf
+  - family: Handjet
+    fonts:
+      - asset: fonts/Handjet-ExtraBold.ttf
