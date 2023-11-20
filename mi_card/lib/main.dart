@@ -34,50 +34,54 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 9
                   ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    size: 25.0,
-                    color: Colors.black
-                    ),
-                    SizedBox(
-                      width: 10.0
-                    ),
-                    Text('804-382-7080',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontFamily: 'GloriaHallelujah',
-                    ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Row(
+                    children: <Widget>[
                     Icon(
-                        Icons.email,
-                        size: 25.0,
-                        color: Colors.black
-                    ),
-                    SizedBox(
+                      Icons.phone,
+                      size: 25.0,
+                      color: Colors.black
+                      ),
+                      SizedBox(
                         width: 10.0
-                    ),
-                    Text('e.morehead@icloud.com',
+                      ),
+                      Text('804-382-7080',
                       style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'GloriaHallelujah',
                       ),
-                    ),
-                  ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                          Icons.email,
+                          size: 25.0,
+                          color: Colors.black
+                      ),
+                      SizedBox(
+                          width: 10.0
+                      ),
+                      Text('e.morehead@icloud.com',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'GloriaHallelujah',
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
