@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -34,50 +35,49 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 9
                   ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              SizedBox(height: 50.0,
+                width: 150.0,
+              child: Divider(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    size: 25.0,
-                    color: Colors.black
-                    ),
-                    SizedBox(
-                      width: 10.0
-                    ),
-                    Text('804-382-7080',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontFamily: 'GloriaHallelujah',
-                    ),
-                    ),
-                  ],
-                ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                        Icons.email,
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
+                        Icons.phone,
                         size: 25.0,
                         color: Colors.black
                     ),
-                    SizedBox(
-                        width: 10.0
-                    ),
-                    Text('e.morehead@icloud.com',
+                    title: Text('804-382-7080',
                       style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'GloriaHallelujah',
                       ),
                     ),
-                  ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 25.0, horizontal: 25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
+                        Icons.email,
+                        size: 25.0,
+                        color: Colors.black
+                    ),
+                    title: Text('e.morehead@icloud.com',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'GloriaHallelujah',
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -87,4 +87,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
