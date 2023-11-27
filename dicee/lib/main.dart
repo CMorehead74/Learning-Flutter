@@ -35,7 +35,7 @@ class _DicePageState extends State<DicePage> {
               padding: const EdgeInsets.all(16.0),
               child: GestureDetector(onTap:() {
                 setState((){
-                  leftDiceNumber = 5;
+                  leftDiceNumber = Random().nextInt(6)+1;
                 });
               },
                 child: Image.asset('images/dice$leftDiceNumber.png'),
@@ -47,7 +47,7 @@ class _DicePageState extends State<DicePage> {
               padding: const EdgeInsets.all(16.0),
               child: GestureDetector(onTap: () {
                 setState((){
-                  rightDiceNumber = 5;
+                  rightDiceNumber = Random().nextInt(6)+1;
                 });
               },
                   child: Image.asset('images/dice$rightDiceNumber.png')
