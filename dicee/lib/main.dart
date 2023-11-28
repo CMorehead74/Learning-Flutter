@@ -16,6 +16,7 @@ void main() {
     ),
   );
 }
+
 class DicePage extends StatefulWidget {
   const DicePage({super.key});
   @override
@@ -33,11 +34,12 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
-              child: GestureDetector(onTap:() {
-                setState((){
-                  leftDiceNumber = Random().nextInt(6)+1;
-                });
-              },
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    leftDiceNumber = Random().nextInt(6) + 1;
+                  });
+                },
                 child: Image.asset('images/dice$leftDiceNumber.png'),
               ),
             ),
@@ -45,13 +47,13 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
-              child: GestureDetector(onTap: () {
-                setState((){
-                  rightDiceNumber = Random().nextInt(6)+1;
-                });
-              },
-                  child: Image.asset('images/dice$rightDiceNumber.png')
-              ),
+              child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      rightDiceNumber = Random().nextInt(6) + 1;
+                    });
+                  },
+                  child: Image.asset('images/dice$rightDiceNumber.png')),
             ),
           ),
         ],
