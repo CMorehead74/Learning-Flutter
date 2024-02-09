@@ -57,12 +57,13 @@ class _QuizPageState extends State<QuizPage> {
               child: Container(
               //textColor: Colors.white,
               color: Colors.green,
-              child: Text(
+              child: Center( child: Text(
                 'True',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
                 ),
+              ),
               ),
             ),
             ),
@@ -77,12 +78,13 @@ class _QuizPageState extends State<QuizPage> {
               },
               child: Container(
               color: Colors.red,
-              child: Text(
+              child: Center(child: Text(
                 'False',
                 style: TextStyle(
                   fontSize: 20.0,
                   color: Colors.white,
                 ),
+              ),
               ),
               ),
             ),
