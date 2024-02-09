@@ -51,8 +51,12 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: GestureDetector(
+              onTap: () {
+                //The user picked true.
+              },
+              child: Container(
               //textColor: Colors.white,
-              //color: Colors.green,
+              color: Colors.green,
               child: Text(
                 'True',
                 style: TextStyle(
@@ -60,9 +64,7 @@ class _QuizPageState extends State<QuizPage> {
                   fontSize: 20.0,
                 ),
               ),
-              onTap: () {
-                //The user picked true.
-              },
+            ),
             ),
           ),
         ),
@@ -70,7 +72,11 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: GestureDetector(
-              //color: Colors.red,
+              onTap: () {
+                //The user picked false.
+              },
+              child: Container(
+              color: Colors.red,
               child: Text(
                 'False',
                 style: TextStyle(
@@ -78,9 +84,7 @@ class _QuizPageState extends State<QuizPage> {
                   color: Colors.white,
                 ),
               ),
-              onTap: () {
-                //The user picked false.
-              },
+              ),
             ),
           ),
         ),
