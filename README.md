@@ -10,3 +10,5 @@ Lesson2 Session3: I am Rich, How to create Flutter apps from scratch
 Lesson6: MiCard - How to Build Beautiful UIs with Flutter Widgets
 
 Lesson7: Random Dice Roller
+
+Lesson9: Xylophone app
