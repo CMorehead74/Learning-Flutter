@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() => runApp(XylophoneApp());
+
+//await player.play(AssetSource('note1.wav'));
 
 class XylophoneApp extends StatelessWidget {
   @override
@@ -9,7 +11,13 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(child:Text(nouns.first)),
+          child: Center(
+              child: GestureDetector(
+                  onTap: () {
+                    final player = AudioPlayer();
+                    player.setSource(AssetSource('note1.wav'));
+          },
+                  child: Text('Click Me'))),
         ),
       ),
     );
